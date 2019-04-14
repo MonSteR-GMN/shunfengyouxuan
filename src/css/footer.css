@@ -1,0 +1,105 @@
+/*footer*/
+.footer{
+    float: left;
+    height: 404px;
+}
+.footer .footer_news{
+    height: 120px;
+}
+.footer .footer_news ul li{
+    float: left;
+}
+.footer .foot{
+    height: 180px;
+    padding: 20px 0px 0px 0px;
+}
+.footer .foot .footleft{
+    float: left;
+    width: 152px;
+    margin: 0px 138px 0px 0px;
+}
+.footer .foot .footleft h3{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #646464;
+    margin: 44px 0px 0px 0px;
+}
+.footer .foot .footleft p{
+    font-size: 12px;
+    line-height: 30px;
+    color: #969696;
+}
+
+.footer .foot .footmid{
+    margin: 20px 0px 0px 0px;
+}
+.footer .foot .footmid ul{
+    float: left;
+    width: 128px;
+}
+.footer .foot .footmid ul li a{
+    font-size: 12px;
+    line-height: 24px;
+    color: #646464;
+}
+.footer .foot .footmid ul li:nth-of-type(1){
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #707070;
+    padding: 0px 0px 6px 0px;
+}
+.footer .foot .footmid ul li a:hover{
+    color: #76AC25;
+}
+.footer .foot .footright{
+    float: left;
+}
+.footer .foot .footright ul{
+    float: left;
+    width: 125px;
+}
+.footer .foot .footright ul li:nth-of-type(1){
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #707070;
+    padding: 0px 0px 12px 0px;
+}
+.footer .foot .footright ul li:nth-of-type(1) a{
+    color: #707070;
+
+}
+.footer .foot .footbottom{
+    float: left;
+    width: 1200px;
+    height: 104px;
+    padding: 15px 0px 0px 0px;
+    border-top: 1px solid #ccc;
+}
+.footer .foot .footbottom>a{
+    float: left;
+    margin: 5px 0px 0px 0px;
+}
+.footer .foot .footbottom p{
+    float: left;
+    padding: 0px 0px 0px 5px;
+}
+.footer .foot .footbottom p span{
+    font-size: 14px;
+    line-height: 14px;
+    color: #969696;
+    padding: 0px 10px 0px 10px;
+}
+.footer .foot .footbottom p span a{
+    font-size: 14px;
+    line-height: 14px;
+    color: #646464;
+}
+.footer .foot .footbottom p:nth-of-type(2) span a{
+    color: #969696;
+}
+.footer .foot .footbottom p span a:hover{
+    color: #76AC25;
+}

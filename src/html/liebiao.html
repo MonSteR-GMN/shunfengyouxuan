@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>列表页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/liebiao.css" />
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    
+    <script type="text/javascript" src="../js/liebiao.js"></script>
+    <script type="text/javascript" src="../js/city-data.js"></script>
+    <script type="text/javascript" src="../js/hzw-city-picker.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header con">
+            <div class="headerfri">
+                <span>冷链配送 顺丰到家 送至:</span>
+                <input type="text" id="cityChoice" placeholder="请输入地址" style="padding-left:1px;width:75px;text-align:center;border: 1px solid #ccc;margin: 9px 0px 3px 2px;">
+                <script>
+                    var cityPicker = new HzwCityPicker({
+                        data: data,
+                        target: 'cityChoice',
+                        valType: 'k-v',
+                        hideCityInput: {
+                            name: 'city',
+                            id: 'city'
+                        },
+                        hideProvinceInput: {
+                            name: 'province',
+                            id: 'province'
+                        },
+                    });
+                    cityPicker.init();
+                </script>
+                <span class="logi">
+                    <p>嘿，欢迎来顺丰优选！</p>
+                    <a href="../html/login.html" class="yidenglu">请登录</a>
+                    <button class="tuichu">退出</button><a href="html/signin.html"> | 免费注册</a>
+                </span>
+            </div>
+            <ul class="headerul">
+                <li>我的订单</li>
+                <li>我的优选<i></i>
+                    <ul class="ulyou">
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <i></i>移动客户端
+                    <div class="mobile">
+                    </div>
+                </li>
+                <li>在线客服</li>
+                <li>帮助中心<i></i>
+                    <ul class="ulhelp">
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                        <li><a href="#">我的</a></li>
+                    </ul>
+                </li>
+                <li>网站导航<i></i>
+                    <div class="sitenav">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="logo">
+        <div class="logo con">
+            <div class="logo_1">
+                <a href="../index.html"><img src="../images/indexLogo2019.png" height="69" width="220" alt="sfbest" /></a>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="脐橙" />
+                    <input type="button" />
+                </form>
+                <p>
+                    <a href="">参鲍</a>
+                    <a href="">糖果</a>
+                    <a href="">牛排</a>
+                    <a href="">牛奶</a>
+                    <a href="">香米</a>
+                    <a href="">面粉</a>
+                    <a href="">海苔</a>
+                    <a href="">葡萄酒</a>
+                    <a href="">油</a>
+                </p>
+            </div>
+            <div class="shopping">
+                <i></i>
+                <a href=""></a>
+                <span>0</span>
+                <ul class="shoppingCart">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <div id="nav">
+        <div class="nav con">
+            <ul class="navsort">
+                <li class="allsort">
+                    <a href="#">精选商品分类</a>
+                    <ul class="navmenu">
+                        <li class="sort sort_1">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>精品肉类</strong></dt>
+                                    <dd><a href="#">牛肉</a></dd>
+                                    <dd><a href="#">猪肉</a></dd>
+                                    <dd><a href="#">羊肉</a></dd>
+                                    <dd><a href="#">禽类</a></dd>
+                                    <dd><a href="#">加工肉类</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>海鲜水产</strong></dt>
+                                    <dd><a href="#">虾</a></dd>
+                                    <dd><a href="#">鱼</a></dd>
+                                    <dd><a href="#">虾鱼蟹/贝类</a></dd>
+                                    <dd><a href="#">小龙虾</a></dd>
+                                    <dd><a href="#">参鲍</a></dd>
+                                    <dd><a href="#">加工水产</a></dd>
+                                    <dd><a href="#">其他水产</a></dd>
+                                    <dd><a href="#">水产礼盒</a></dd>
+                                    <dd><a href="#"> 卡券</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>季节性食品</strong></dt>
+                                    <dd><a href="#">大闸蟹</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-roulei"></i>
+                            <h3><a href="#">肉类海鲜</a></h3>
+                            <ul>
+                                <li><a href="#">牛肉</a></li>
+                                <li><a href="#">羊肉</a></li>
+                                <li><a href="#">参鲍</a></li>
+                                <li><a href="#">鱼</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_2">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>水果</strong></dt>
+                                    <dd><a href="#">柑橘橙</a></dd>
+                                    <dd><a href="#">柠檬</a></dd>
+                                    <dd><a href="#">柚</a></dd>
+                                    <dd><a href="#">瓜类</a></dd>
+                                    <dd><a href="#" 梨></a></dd>
+                                    <dd><a href="#">芒果</a></dd>
+                                    <dd><a href="#">牛油果</a></dd>
+                                    <dd><a href="#">苹果/桃</a></dd>
+                                    <dd><a href="#">杏/李/梅</a></dd>
+                                    <dd><a href="#">枣</a></dd>
+                                    <dd><a href="#">椰子</a></dd>
+                                    <dd><a href="#">火龙果</a></dd>
+                                    <dd><a href="#">猕猴桃/奇异果</a></dd>
+                                    <dd><a href="#">石榴</a></dd>
+                                    <dd><a href="#">龙眼</a></dd>
+                                    <dd><a href="#">香蕉</a></dd>
+                                    <dd><a href="#">其他水果</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>蔬菜</strong></dt>
+                                    <dd><a href="#">根茎类</a></dd>
+                                    <dd><a href="#">叶菜类</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-shucai"></i>
+                            <h3><a href="#">新鲜果蔬</a></h3>
+                            <ul>
+                                <li><a href="#">柑橘橙</a></li>
+                                <li><a href="#">猕猴桃</a></li>
+                                <li><a href="#">蔬菜</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_3">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>肉类熟食</strong></dt>
+                                    <dd><a href="#">香肠</a></dd>
+                                    <dd><a href="#">火腿</a></dd>
+                                    <dd><a href="#">培根</a></dd>
+                                    <dd><a href="#">其他熟食</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>主食面点</strong></dt>
+                                    <dd><a href="#">包点/饼类/面条</a></dd>
+                                    <dd><a href="#">饺子/馄饨/云吞</a></dd>
+                                    <dd><a href="#">汤圆</a></dd>
+                                    <dd><a href="#">披萨/派</a></dd>
+                                    <dd><a href="#">煎炸</a></dd>
+                                    <dd><a href="#">简餐/汤食</a></dd>
+                                    <dd><a href="#">其他速冻品</a></dd>
+                                    <dd><a href="#">粽子</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>奶制品</strong></dt>
+                                    <dd><a href="#">加工奶酪</a></dd>
+                                    <dd><a href="#">儿童奶酪</a></dd>
+                                    <dd><a href="#">无盐黄油</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>冷藏食品</strong></dt>
+                                    <dd><a href="#">低温果汁</a></dd>
+                                    <dd><a href="#">低温饮料</a></dd>
+                                    <dd><a href="#">年糕</a></dd>
+                                    <dd><a href="#">其他低温品</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>速食冰品</strong></dt>
+                                    <dd><a href="#">冰淇淋</a></dd>
+                                    <dd><a href="#">冷冻蛋糕</a></dd>
+                                    <dd><a href="#">水果甜点</a></dd>
+                                    <dd><a href="#">冰淇淋券</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>蛋品</strong></dt>
+                                    <dd><a href="#">鲜蛋类（鸡鸭鹅）</a></dd>
+                                    <dd><a href="#">咸蛋/皮蛋类</a></dd>
+                                    <dd><a href="#">其他蛋类</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-lengcangqu"></i>
+                            <h3><a href="#">速食冷藏</a></h3>
+                            <ul>
+                                <li><a href="#">速冻食品</a></li>
+                                <li><a href="#">蛋</a></li>
+                                <li><a href="#">冷冻甜点</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_4">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>葡萄酒</strong></dt>
+                                    <dd><a href="#">红葡萄酒</a></dd>
+                                    <dd><a href="#">白葡萄酒</a></dd>
+                                    <dd><a href="#">桃红葡萄酒</a></dd>
+                                    <dd><a href="#">甜葡萄酒</a></dd>
+                                    <dd><a href="#">香槟/起泡酒</a></dd>
+                                    <dd><a href="#">名庄酒</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>洋酒</strong></dt>
+                                    <dd><a href="#">威士忌</a></dd>
+                                    <dd><a href="#">伏特加</a></dd>
+                                    <dd><a href="#">白兰地</a></dd>
+                                    <dd><a href="#">利口酒</a></dd>
+                                    <dd><a href="#">朗姆酒</a></dd>
+                                    <dd><a href="#">预调酒</a></dd>
+                                    <dd><a href="#">梅子酒</a></dd>
+                                    <dd><a href="#">果酒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>啤酒</strong></dt>
+                                    <dd><a href="#">黑啤</a></dd>
+                                    <dd><a href="#">黄啤</a></dd>
+                                    <dd><a href="#">白啤</a></dd>
+                                    <dd><a href="#">鲜啤</a></dd>
+                                    <dd><a href="#">果味啤酒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>白酒</strong></dt>
+                                    <dd><a href="#">酱香型</a></dd>
+                                    <dd><a href="#">浓香型</a></dd>
+                                    <dd><a href="#">清香型</a></dd>
+                                    <dd><a href="#">其他白酒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>其他酒类</strong></dt>
+                                    <dd><a href="#">滋补酒</a></dd>
+                                    <dd><a href="#">黄酒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>安心乳品</strong></dt>
+                                    <dd><a href="#">牛奶</a></dd>
+                                    <dd><a href="#">豆奶</a></dd>
+                                    <dd><a href="#">常温酸奶</a></dd>
+                                    <dd><a href="#">低温酸奶</a></dd>
+                                    <dd><a href="#">低温保鲜奶</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>果汁/饮料/水</strong></dt>
+                                    <dd><a href="#">果蔬饮料</a></dd>
+                                    <dd><a href="#">纯果汁</a></dd>
+                                    <dd><a href="#">茶饮料</a></dd>
+                                    <dd><a href="#">咖啡饮料</a></dd>
+                                    <dd><a href="#">乳酸菌</a></dd>
+                                    <dd><a href="#">水</a></dd>
+                                    <dd><a href="#">其他饮料</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-jiushui"></i>
+                            <h3><a href="#">酒水饮料</a></h3>
+                            <ul>
+                                <li><a href="#">葡萄酒</a></li>
+                                <li><a href="#">啤酒</a></li>
+                                <li><a href="#">白酒</a></li>
+                                <li><a href="#">牛奶</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_5">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>休闲零食</strong></dt>
+                                    <dd><a href="#">肉类零食</a></dd>
+                                    <dd><a href="#">蜜饯/干果</a></dd>
+                                    <dd><a href="#">膨化食品</a></dd>
+                                    <dd><a href="#">其他零食</a></dd>
+                                    <dd><a href="#">节庆礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>坚果炒货</strong></dt>
+                                    <dd><a href="#">扁桃仁/巴旦木</a></dd>
+                                    <dd><a href="#">开心果</a></dd>
+                                    <dd><a href="#">腰果</a></dd>
+                                    <dd><a href="#">瓜子/瓜仁</a></dd>
+                                    <dd><a href="#">花生</a></dd>
+                                    <dd><a href="#">板栗</a></dd>
+                                    <dd><a href="#">其他坚果</a></dd>
+                                    <dd><a href="#">坚果组合装</a></dd>
+                                    <dd><a href="#">坚果礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>糖果/巧克力</strong></dt>
+                                    <dd><a href="#">巧克力</a></dd>
+                                    <dd><a href="#">糖果</a></dd>
+                                    <dd><a href="#">巧克力礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>饼干糕点</strong></dt>
+                                    <dd><a href="#">饼干</a></dd>
+                                    <dd><a href="#">曲奇</a></dd>
+                                    <dd><a href="#">糕点</a></dd>
+                                    <dd><a href="#">威化</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>季节性食品</strong></dt>
+                                    <dd><a href="#">月饼</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-tangguoxiaoniu"></i>
+                            <h3><a href="#">休闲糖巧</a></h3>
+                            <ul>
+                                <li><a href="#">巧克力</a></li>
+                                <li><a href="#">坚果</a></li>
+                                <li><a href="#">曲奇</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_6">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>食用油</strong></dt>
+                                    <dd><a href="#">橄榄油</a></dd>
+                                    <dd><a href="#">花生油</a></dd>
+                                    <dd><a href="#">葵花籽油</a></dd>
+                                    <dd><a href="#">其他食用油</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>米面杂粮</strong></dt>
+                                    <dd><a href="#">大米</a></dd>
+                                    <dd><a href="#">面粉</a></dd>
+                                    <dd><a href="#">五谷杂粮</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                    <dd><a href="#">卡券</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>厨房调料</strong></dt>
+                                    <dd><a href="#">酱油/醋</a></dd>
+                                    <dd><a href="#">调味油/汁</a></dd>
+                                    <dd><a href="#">调味料/粉/酱</a></dd>
+                                    <dd><a href="#">调味酱/番茄酱</a></dd>
+                                    <dd><a href="#">果酱/涂抹酱</a></dd>
+                                    <dd><a href="#">咖喱/味噌</a></dd>
+                                    <dd><a href="#">鸡精/盐/糖</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>南北干货</strong></dt>
+                                    <dd><a href="#">枣</a></dd>
+                                    <dd><a href="#">菌菇</a></dd>
+                                    <dd><a href="#">木耳/银耳</a></dd>
+                                    <dd><a href="#">桂圆</a></dd>
+                                    <dd><a href="#">枸杞/莲子</a></dd>
+                                    <dd><a href="#">海产干货</a></dd>
+                                    <dd><a href="#">滋补品</a></dd>
+                                    <dd><a href="#">菜干/粉丝</a></dd>
+                                    <dd><a href="#">汤料</a></dd>
+                                    <dd><a href="#">其他</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>方便速食</strong></dt>
+                                    <dd><a href="#">面条</a></dd>
+                                    <dd><a href="#">意大利面</a></dd>
+                                    <dd><a href="#">方便面</a></dd>
+                                    <dd><a href="#">罐头</a></dd>
+                                    <dd><a href="#">其他</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-liangyouqu"></i>
+                            <h3><a href="#">粮油干货</a></h3>
+                            <ul>
+                                <li><a href="#">橄榄油</a></li>
+                                <li><a href="#">泰国米</a></li>
+                                <li><a href="#">枣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_7">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>休闲冲饮</strong></dt>
+                                    <dd><a href="#">蜂蜜/果酱</a></dd>
+                                    <dd><a href="#">麦片</a></dd>
+                                    <dd><a href="#">成人奶粉</a></dd>
+                                    <dd><a href="#">冲饮谷物</a></dd>
+                                    <dd><a href="#">谷物粉</a></dd>
+                                    <dd><a href="#">柚子茶 </a></dd>
+                                    <dd><a href="#">花茶</a></dd>
+                                    <dd><a href="#">黑糖</a></dd>
+                                    <dd><a href="#">其它</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong> 咖啡/伴侣</strong></dt>
+                                    <dd><a href="#">速溶咖啡</a></dd>
+                                    <dd><a href="#">咖啡粉/豆</a></dd>
+                                    <dd><a href="#">可可粉</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>进口茶</strong></dt>
+                                    <dd><a href="#">西式茶</a></dd>
+                                    <dd><a href="#">茶包</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>国产茗茶</strong></dt>
+                                    <dd><a href="#">绿茶</a></dd>
+                                    <dd><a href="#">红茶</a></dd>
+                                    <dd><a href="#">黑茶</a></dd>
+                                    <dd><a href="#">青茶</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-kafei"></i>
+                            <h3><a href="#">冲调茶饮</a></h3>
+                            <ul>
+                                <li><a href="#">蜂蜜</a></li>
+                                <li><a href="#">咖啡</a></li>
+                                <li><a href="#">麦片</a></li>
+                                <li><a href="#">茗茶</a></li>
+                            </ul>
+                        </li>
+                        <li class="sort sort_8">
+                            <div class="sortson">
+                                <dl>
+                                    <dt><strong>母婴食品</strong></dt>
+                                    <dd><a href="#">奶粉</a></dd>
+                                    <dd><a href="#">一 段</a></dd>
+                                    <dd><a href="#">二 段</a></dd>
+                                    <dd><a href="#">三 段</a></dd>
+                                    <dd><a href="#">四 段</a></dd>
+                                    <dd><a href="#">羊 奶粉</a></dd>
+                                    <dd><a href="#">辅食</a></dd>
+                                    <dd><a href="#">米粉/米糊</a></dd>
+                                    <dd><a href="#">宝宝零食</a></dd>
+                                    <dd><a href="#">DHA</a></dd>
+                                    <dd><a href="#">钙铁锌</a></dd>
+                                    <dd><a href="#">维生素</a></dd>
+                                    <dd><a href="#">益生菌</a></dd>
+                                    <dd><a href="#">鱼肝油</a></dd>
+                                    <dd><a href="#">特殊配方奶粉</a></dd>
+                                    <dd><a href="#">孕妇奶粉</a></dd>
+                                    <dd><a href="#">其他</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>母婴用品</strong></dt>
+                                    <dd><a href="#">纸尿裤</a></dd>
+                                    <dd><a href="#">拉拉裤</a></dd>
+                                    <dd><a href="#">婴幼洗护</a></dd>
+                                    <dd><a href="#">婴儿湿巾</a></dd>
+                                    <dd><a href="#">驱蚊防虫</a></dd>
+                                    <dd><a href="#">安全座椅</a></dd>
+                                    <dd><a href="#">喂养用品</a></dd>
+                                    <dd><a href="#">妈妈用品</a></dd>
+                                    <dd><a href="#">其他</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>美妆个护</strong></dt>
+                                    <dd><a href="#">面部护理</a></dd>
+                                    <dd><a href="#">缤纷彩妆</a></dd>
+                                    <dd><a href="#">口腔护理</a></dd>
+                                    <dd><a href="#">美发护发</a></dd>
+                                    <dd><a href="#">身体护理</a></dd>
+                                    <dd><a href="#">沐浴用品</a></dd>
+                                    <dd><a href="#">美容工具</a></dd>
+                                    <dd><a href="#">女性护理</a></dd>
+                                    <dd><a href="#">男性洗护</a></dd>
+                                    <dd><a href="#">计生用品</a></dd>
+                                    <dd><a href="#">其它</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>营养保健</strong></dt>
+                                    <dd><a href="#">滋补养生</a></dd>
+                                    <dd><a href="#">营养补充</a></dd>
+                                    <dd><a href="#">健康养护</a></dd>
+                                    <dd><a href="#">女士保养</a></dd>
+                                    <dd><a href="#">关爱老年</a></dd>
+                                    <dd><a href="#">其他</a></dd>
+                                    <dd><a href="#">礼盒</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>家居用品</strong></dt>
+                                    <dd><a href="#">厨房用具</a></dd>
+                                    <dd><a href="#">清洁用具</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>进口食品</strong></dt>
+                                    <dd><a href="#">休闲零食</a></dd>
+                                    <dd><a href="#">冲调饮品</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt><strong>手机数码</strong></dt>
+                                    <dd><a href="#">手机</a></dd>
+                                    <dd><a href="#">智能穿戴</a></dd>
+                                    <dd><a href="#">智能家居系统</a></dd>
+                                    <dd><a href="#">无线音箱</a></dd>
+                                    <dd><a href="#">其他手机配件</a></dd>
+                                </dl>
+                            </div>
+                            <i class="iconfont icon-yk_guoji"></i>
+                            <h3><a href="#">优选国际</a></h3>
+                            <ul>
+                                <li><a href="#">奶粉</a></li>
+                                <li><a href="#">彩妆</a></li>
+                                <li><a href="#">营养</a></li>
+                                <li><a href="#">家居用品</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">优选生鲜</a></li>
+                <li><a href="#">优选厨房</a></li>
+                <li><a href="#">优选国际</a></li>
+                <li><a href="#">企业专区</a></li>
+                <li><a href="#">优选会员</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main con .clearfix:after">
+            <div class="top">
+                <a href="#"><img src="../images/liebiaomain.jpg" alt="" /></a>
+            </div>
+            <div class="down">
+                <p><img src="../images/leibiaonew.jpg" alt="" /></p>
+            </div>
+            <div class="render">
+                <ul class="datalist">
+        
+                </ul>
+                
+            </div>
+            <div class="dataList">
+                <div class="page">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer con">
+            <div class="foot">
+                <div class="footleft">
+                    <img src="../images/foot_1.png" height="45" width="152" alt="" />
+                    <h3>9533858</h3>
+                    <p>周一至周日8:30-22:00</p>
+                </div>
+                <div class="footmid">
+                    <ul>
+                        <li>购物指南</li>
+                        <li><a href="#">积分制度</a></li>
+                        <li><a href="#">会员介绍</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">在线客服</a></li>
+                    </ul>
+                    <ul>
+                        <li>配送服务</li>
+                        <li><a href="#">配送政策</a></li>
+                        <li><a href="#">开箱验货</a></li>
+                        <li><a href="#">配送运费</a></li>
+                        <li><a href="#">配送范围</a></li>
+                    </ul>
+                    <ul>
+                        <li>支付方式</li>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">优选卡</a></li>
+                        <li><a href="#">发票制度</a></li>
+                    </ul>
+                    <ul>
+                        <li>售后服务</li>
+                        <li><a href="#">退款说明</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退还货政策</a></li>
+                        <li><a href="#">隐私条款</a></li>
+                    </ul>
+                </div>
+                <div class="footright">
+                    <ul>
+                        <li>
+                            <a href="#">手机客户端</a>
+                        </li>
+                        <li><span><img src="../images/foot_right_1.png" height="80" width="80" alt="" /></span></li>
+                    </ul>
+                    <ul>
+                        <li>官方微信</li>
+                        <li><span><img src="../images/foot_right_2.png" height="80" width="80" alt="" /></span></li>
+                    </ul>
+                </div>
+                <div class="footbottom">
+                    <a href="#"><img src="../images/credit.png" height="35" width="95" alt="" /></a>
+                    <a href="#"><img src="../images/cert.png" height="35" width="95" alt="" /></a>
+                    <a href="#"><img src="../images/bottom_sm.png" height="35" width="95" alt="" /></a>
+                    <p>
+                        <span><a href="http://www.sfbest.com/www/379/5109.html">关于我们</a></span>
+                        <span><a href="http://www.sfbest.com/www/380/5116.html">联系我们</a></span>
+                        <span><a href="http://www.sfbest.com/www/381/5117.html">招聘人才</a></span>
+                        <span><a href="http://www.sfbest.com/www/330/2705.html">友情链接</a></span>
+                        <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+                    </p>
+                    <p>
+                        <span>京公网安备11010502026831号</span>
+                        <span><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">京ICP证150325号</a></span>
+                        <span><a href="http://www.sfbest.com/www/174/8765.html">食品经营许可证JY11113080533669号</a></span>
+                        <span><a href="http://www.sfbest.com/www/174/461.html">企业营业执照</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

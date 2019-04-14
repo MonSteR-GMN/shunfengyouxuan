@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/base2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="main .con">
+            <div class="header">
+                <img src="../images/indexLogo2019.png" alt="" />
+                <h3>欢迎登录</h3>
+            </div>
+            <div class="signup">
+                <div class="signbg">
+                    <a href="#"><img src="../images/signupbg.png" alt="" /></a>
+                </div>
+                <div class="signtop">
+                    <p><span>登录</span><a href="signin.html">立即注册</a></p>
+                    <div class="sign">
+                        <h3 class="sign1">优选账号</h3>
+                        <h3 class="sign2">速递账号</h3>
+                        <div class="signleft">
+                            <div class="signerr"></div>
+                            <form action="login1.php" method="post">
+
+                                <span><i class="iconfont icon-zhanghu"></i></span>
+                                <input id="username2" type="text" placeholder="请输入手机号" />
+
+                                <span><i class="iconfont icon-ziyuanxhdpi"></i></span>
+                                <input id="password2" type="password" placeholder="请输入密码" />
+
+                                <span><i class="iconfont icon-securityCode-b"></i></span>
+                                <input class="sryzm2 input-val" type="text" placeholder="请输入验证码" /><canvas id="canvas" width="100" height="36"></canvas>
+                                <input id="btnLogin2" type="button"  value="登录" />
+                                <!-- disabled -->
+                            </form>
+                        </div>
+                        <!-- <div class="signright">
+                            <div class="signerr"></div>
+                            <form action="login1.php" method="post">
+                                <span><i class="iconfont icon-zhanghu"></i></span>
+                                <input id="username" type="text" placeholder="请输入手机号" />
+                                <span><i class="iconfont icon-ziyuanxhdpi"></i></span>
+                                <input id="password" type="password" placeholder="请输入密码" />
+                                <span style="display:none;"><i class="iconfont icon-securityCode-b"></i></span>
+                                <input style="display:none;" type="text" placeholder="请输入验证码" />
+                                <input id="btnLogin" type="button" value="登录" />
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

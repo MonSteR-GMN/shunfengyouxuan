@@ -1,0 +1,313 @@
+.main{
+    /*float: left;*/
+    height: 100%;
+}
+.main .maintt{
+    float: left;
+    width: 1200px;
+    height: 580px;
+    margin: 0px 0px 30px 0px;
+}
+.main .maintt .goods{
+    float: left;
+    width: 945px;
+    height: 580px;
+    /*border: 1px solid #ddd;*/
+    margin: 0px 0px 0px 10px;
+}
+.main .maintt .goods h3{
+    color: #333333;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    padding: 30px 0px 12px 3px;
+    height: 61px;
+}
+.main .maintt .goods h3 span{
+    color: #333333;
+    font-weight: normal;
+    font-size: 10px;
+    font-family: Microsoft YaHei;
+    margin: 0px 0px 0px 10px;
+}
+.main .maintt .goods .goods1{
+    height: 519px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.main .maintt .goods .goods1 li{
+    float：left;
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.main .maintt .goods .goods1 li p .desc{
+    /*float: left;*/
+    font-size: 14px;
+    color: #323232;
+    display: inline-block;
+    margin-left: 12px;
+    /*height: 14px;*/
+    /*overflow: hidden;*/
+    font-family: 微软雅黑;
+    padding-top: 10px;
+    line-height: 14px;
+}
+.main .maintt .goods .goods1 li .pic{
+    width: 204px;
+    height: 204px;
+    float: right;
+    /*margin-top: -1px;*/
+}
+    
+.main .maintt .goods .goods1 li span{
+    display: inline-block;
+    /*float: left;*/
+    font-size: 16px;
+    color: #f33f00;
+    /*height: 16px;*/
+    padding-top: 10px;
+    font-family: 微软雅黑;
+    margin-left: 12px;
+    line-height: 16px;
+    /*overflow: hidden;*/
+}
+/*goods2*/
+.main .maintt .goods2{
+    float: left;
+    width: 224px;
+    height: 519px;
+    border: 1px solid #ccc;
+    margin: 61px 0px 0px 10px;
+}
+.main .maintt .goods2 .goods2_1{
+    text-align: left;
+}
+.main .maintt .goods2 h3{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.main .maintt .goods2 h3>a{
+    float: right;
+    font-size: 12px;
+    line-height: 40px;
+    color: #666;
+}   
+/*goods4*/
+.main .goods4{
+    float: left;
+    width: 1200px;
+    height: 470px;
+    margin: 0px 0px 30px 0px;
+}
+.main .goods4 .goods4_1{
+    float: left;
+    width: 250px;
+    height: 470px;
+}
+.main .goods4 .goods4_1 h3{
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+    background: #76AC25;
+}
+.main .goods4 .goods4_2{
+    float: left;
+    width: 730px;
+    height: 470px;
+    border-top: 1px solid #76AC25;
+    border-bottom: 1px solid #ccc;
+}
+.main .goods4 .goods4_2 .goods4_2_1{
+    width: 730px;
+    height: 470px;
+    padding: 10px 5px 10px 5px; 
+}
+.main .goods4 .goods4_2 .goods4_2_1 li{
+    float: left;
+    width: 180px;
+    height: 225px;
+    /*text-align: center;*/
+    padding: 0px 10px 0px 10px; 
+}
+.main .goods4 .goods4_2 .goods4_2_1 li .desc{
+    font-size: 12px;
+    color: #323232;
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    font-family: 微软雅黑;
+    padding-top: 5px;
+    line-height: 14px;
+}
+.main .goods4 .goods4_2 .goods4_2_1 li span{
+    display: inline-block;
+    /*float: left;*/
+    font-size: 14px;
+    font-weight: 600;
+    color: #f33f00;
+    /*height: 16px;*/
+    padding-top: 10px;
+    font-family: 微软雅黑;
+    line-height: 16px;
+    /*overflow: hidden;*/
+}
+.main .goods4 .goods4_3{
+    float: left;
+    width: 220px;
+    height: 470px;
+    border-top: 1px solid #76AC25;
+    border-bottom: 1px solid #ccc;
+}
+.main .goods4 .goods4_3 ul{
+    height: 240px;
+    padding: 20px 10px 10px 15px;
+    background: #F4F4F4;
+} 
+.main .goods4 .goods4_3 ul li{
+    float:left;
+    width: 55px;
+    height: 55px;
+    font-size: 10px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    margin: 2% 2%;
+}
+/*goods5*/
+.main .goods5{
+    float: left;
+    width: 1200px;
+    height: 470px;
+    margin: 0px 0px 30px 0px;
+}
+.main .goods5 .goods5_1{
+    float: left;
+    width: 250px;
+    height: 470px;
+}
+.main .goods5 .goods5_1 h3{
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+    background: #76AC25;
+}
+.main .goods5 .goods5_2{
+    float: left;
+    width: 730px;
+    height: 470px;
+    border-top: 1px solid #76AC25;
+    border-bottom: 1px solid #ccc;
+}
+.main .goods5 .goods5_2 .goods5_2_1{
+    width: 730px;
+    height: 470px;
+    padding: 10px 5px 10px 5px; 
+}
+.main .goods5 .goods5_2 .goods5_2_1 li{
+    float: left;
+    width: 180px;
+    height: 225px;
+    /*text-align: center;*/
+    padding: 0px 10px 0px 10px; 
+}
+.main .goods5 .goods5_2 .goods5_2_1 li .desc{
+    font-size: 12px;
+    color: #323232;
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    font-family: 微软雅黑;
+    padding-top: 5px;
+    line-height: 14px;
+}
+.main .goods5 .goods5_2 .goods5_2_1 li span{
+    display: inline-block;
+    /*float: left;*/
+    font-size: 14px;
+    font-weight: 600;
+    color: #f33f00;
+    /*height: 16px;*/
+    padding-top: 10px;
+    font-family: 微软雅黑;
+    line-height: 16px;
+    /*overflow: hidden;*/
+}
+.main .goods5 .goods5_3{
+    float: left;
+    width: 220px;
+    height: 470px;
+    border-top: 1px solid #76AC25;
+    border-bottom: 1px solid #ccc;
+}
+.main .goods5 .goods5_3 ul{
+    height: 240px;
+    padding: 20px 10px 10px 15px;
+    background: #F4F4F4;
+} 
+.main .goods5 .goods5_3 ul li{
+    float:left;
+    width: 55px;
+    height: 55px;
+    font-size: 10px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    margin: 2% 2%;
+}
+/*goods11*/
+.main .goods11{
+    float: left;
+    width: 1200px;
+    height: 100%;
+    padding: 15px 14px;
+    /*background: red;*/
+    border: 1px solid #ccc;
+}
+.main .goods11 ul{
+    /*float: left;*/
+    width: 1200px;
+    height: 100%;
+
+}
+.main .goods11 .goods11_1 li{
+    float: left;
+    width: 234px;
+    height: 308px;
+    /*width: 210px;*/
+    padding: 15px 12px;
+}   
+.main .goods11 li .desc{
+    font-size: 12px;
+    color: #323232;
+    /*display: inline-block;*/
+    height: 36px;
+    overflow: hidden;
+    font-family: 微软雅黑;
+    margin-top: 10px;
+    line-height: 14px;
+}
+.main .goods11 li span{
+    /*display: inline-block;*/
+    /*float: left;*/
+    font-size: 16px;
+    font-weight: 600;
+    color: #f33f00;
+    /*height: 16px;*/
+    padding-top: 10px;
+    font-family: 微软雅黑;
+    line-height: 18px;
+    /*overflow: hidden;*/
+}
+
+
+

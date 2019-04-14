@@ -1,0 +1,230 @@
+#main{
+    height: 713px;
+}
+#main .main{
+    margin: 0 auto;
+    width: 1000px;
+    height: 713px;
+}
+#main .main .header{
+    height: 91px;
+}
+#main .main .header img{
+    float: left;
+    width: 220px;
+    height: 70px;
+    margin: 10px 22px 11px 0px;
+}
+#main .main .header h3{
+    float: left;
+    font-size: 18px;
+    line-height: 91px;
+}
+#main .main .signup{
+    float: left;
+    width: 1000px;
+    height: 452px;
+    padding: 0px 60px 0px 0px;
+}
+#main .main .signup .signbg{
+    float: left;
+    width: 540px;
+    height: 452px; 
+    padding: 46px 0px 0px 0px;
+}
+#main .main .signup .signtop{
+    float: left;
+    width: 400px;
+    height: 452px;
+    /*background: red;*/
+}
+#main .main .signup .signtop p{
+    height: 48px;
+}
+#main .main .signup .signtop p span{
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+}
+#main .main .signup .signtop p a{
+    float: right;
+    font-size: 14px;
+    line-height: 48px;
+    color: #666666;
+}
+#main .main .signup .sign{
+    width: 400px;   
+    height: 41px;
+    position: relative;
+}
+#main .main .signup .sign h3{
+    float: left;
+    font-size: 12px;
+    line-height: 41px;
+    text-align: center;
+    width: 199px;
+}
+#main .main .signup .sign .signleft{
+    float: left;
+    width: 400px;
+    height: 363px;
+    border: 1px solid #ccc;
+    border-top: none;
+    /*background: green;*/
+}
+#main .main .signup .sign .signright{
+    width: 400px;
+    height: 363px;
+    /*background: blue;*/
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.signlight1{
+    border-top: 2px solid #8DC63F;
+    border-right: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+}
+.signlight2{
+    border-top: 2px solid #8DC63F;
+    border-left: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
+}
+/*.signright*/
+#main .main .signup .signtop .sign .signright{
+    padding: 7px 0px 0px 26px;
+}
+#main .main .signup .signtop .sign .signright .signerr{
+
+    width: 350px;
+    height: 30px;
+    background: #FDEFEC;
+    border: 1px solid #FFB6A9;
+    font-size: 12px;
+    color: #FF4422;
+    margin: 0px 0px 5px 0px;
+}
+#main .main .signup .signtop .sign .signright span{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+    border-right: none;
+    text-align: center;
+    background: #F0F0F0;
+}
+#main .main .signup .signtop .sign .signright span i{
+    font-size: 15px;
+    line-height: 40px;
+    color: #BEBEBE;
+}
+#main .main .signup .signtop .sign .signright input{
+    float: left;
+    width: 310px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+    padding: 0px 0px 0px 6px;
+    margin: 0px 0px 10px 0px;
+}
+/*#main .main .signup .signtop .sign .signright input:nth-of-type(3){
+    width: 200px;
+
+}*/
+#main .main .signup .signtop .sign .signright input:nth-of-type(4){
+    width: 350px;
+    margin: 40px 0px 0px 0px;
+    border: none;
+    background: #8DC63F;
+    border-radius: 5px;
+}
+/*.signleft*/
+#main .main .signup .signtop .sign .signleft{
+    padding: 7px 0px 0px 26px;
+}
+#main .main .signup .signtop .sign .signleft .signerr{
+    display: block; 
+    width: 350px;
+    height: 30px;
+    margin: 0px 0px 5px 0px;
+}
+.signerrblock{
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    background: #FDEFEC;
+    border: 1px solid #FFB6A9;
+    font-size: 12px;
+    color: #FF4422;
+}
+
+
+
+
+/*#main .main .signup .signtop .sign .signleft .signerr{
+    display: none;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    background: #FDEFEC;
+    border: 1px solid #FFB6A9;
+    font-size: 12px;
+    color: #FF4422;
+    margin: 0px 0px 5px 0px;
+}*/
+#main .main .signup .signtop .sign .signleft span{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+    border-right: none;
+    text-align: center;
+    background: #F0F0F0;
+}
+#main .main .signup .signtop .sign .signleft span i{
+    font-size: 15px;
+    line-height: 40px;
+    color: #BEBEBE;
+}
+#main .main .signup .signtop .sign .signleft input{
+    float: left;
+    width: 310px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+    padding: 0px 0px 0px 6px;
+    margin: 0px 0px 10px 0px;
+}
+#main .main .signup .signtop .sign .signleft input:nth-of-type(3){
+    width: 200px;
+
+}
+#main .main .signup .signtop .sign .signleft input:nth-of-type(4){
+    width: 350px;
+    margin: 40px 0px 0px 0px;
+    border: none;
+    background: #8DC63F;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
